@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/philudhw/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - export DEPLOYPATH=/home/philudhw/public_html/
+    - /bin/cp -R images $DEPLOYPATH
